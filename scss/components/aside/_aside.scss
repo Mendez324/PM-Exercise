@@ -1,0 +1,24 @@
+.c-menu {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    background: rgb(98, 98, 117);
+    font-family: $primary-font;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+
+    &__list {
+        margin: 0 auto;
+        display: block;
+        
+    }
+
+    &__list-item {
+        text-align: center;
+        margin: 30px ;
+        &:hover {
+            font-weight: bolder;
+        }
+    }
+}

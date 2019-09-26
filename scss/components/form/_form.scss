@@ -1,0 +1,20 @@
+.c-form {
+    width: 85%;
+    background: rgb(230, 216, 216);
+
+    &__wrapper {
+        margin: 35px 60px 20px 40px;
+        height: 80%;
+        background: red;
+    }
+
+    &__title {
+        margin: 20px;
+        font-family: $primary-font;
+        font-size: 34px;
+    }
+
+    &__type {
+
+    }
+}
