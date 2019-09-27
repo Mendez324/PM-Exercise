@@ -1,0 +1,105 @@
+.c-form {
+    width: 90%;
+    background: rgb(231, 221, 221);
+    font-family: $primary-font;
+
+    &__wrapper {
+        margin: 35px 60px 20px 40px;
+        height: 80%;
+        width: 90%;
+    }
+
+    &__title {
+        margin: 30px;
+        font-family: $primary-font;
+        font-size: 34px;
+    }
+
+    &__accordion {
+        padding-left: 30px;
+        width: 100%;
+        height: 50%;
+        
+    }
+
+    &__acc-item {
+        display: block;
+        font-size: 18px;
+        width: 100%;
+        font-weight: 700; 
+        border-radius: 5px 5px 0 0;
+        height: 69px;
+    }
+
+    &__content {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: rgb(243, 239, 239);
+        border-radius: 5px 5px 0 0;
+        border-bottom:1px groove rgb(129, 124, 124);
+    }
+
+    &__item-title {
+        padding: 25px;
+    }
+
+    &__hidden {
+        display: none;
+        &.show {
+            display: block;
+            background: white;
+            border-radius: 0 0 5px 5px;
+        }
+       
+    }
+
+
+
+
+
+    &__checklist {
+        width: 80%;
+        padding: 15px 25px;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 20px;
+        padding: 8px;
+        
+    }
+
+    &__squareform {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    &__show {
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        height: 30px;
+        width: 30px;
+        border: 0.5px solid grey;
+        &:hover {
+            background: rgb(197, 191, 191);
+        }
+        
+    }
+
+    &__labeling {
+        margin-left: 30px;
+    }
+
+    
+
+    
+
+
+    
+}

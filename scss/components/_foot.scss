@@ -1,13 +1,14 @@
 .c-foot {
-    height: 8%;
+    height: 70px;
     width: 100%;
     background: rgb(92, 92, 102);
+    border-top: 0.5px solid rgb(248, 234, 234);
     color: white;
     display: flex;
     font-size: 14px;
     padding: 5px;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
+
 }
