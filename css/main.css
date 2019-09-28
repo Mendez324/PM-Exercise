@@ -133,6 +133,7 @@ html, body {
     font-family: "Open Sans", sans-serif;
     font-size: 34px; }
   .c-form__accordion {
+    display: block;
     padding-left: 30px;
     width: 100%;
     height: 50%; }
@@ -141,8 +142,7 @@ html, body {
     font-size: 18px;
     width: 100%;
     font-weight: 700;
-    border-radius: 5px 5px 0 0;
-    height: 69px; }
+    border-radius: 5px 5px 0 0; }
   .c-form__content {
     cursor: pointer;
     display: -webkit-box;
@@ -159,10 +159,13 @@ html, body {
     padding: 25px; }
   .c-form__hidden {
     display: none; }
-    .c-form__hidden.show {
+    .c-form__hidden.show-box {
       display: block;
       background: white;
-      border-radius: 0 0 5px 5px; }
+      border-radius: 0 0 5px 5px;
+      font-family: "Open Sans", sans-serif;
+      color: darkslategrey;
+      padding: 10px; }
   .c-form__checklist {
     width: 80%;
     padding: 15px 25px; }
@@ -178,12 +181,39 @@ html, body {
     width: 0; }
   .c-form__show {
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: 5px;
-    height: 30px;
-    width: 30px;
-    border: 0.5px solid grey; }
+    height: 27px;
+    width: 27px;
+    border: 0.5px solid grey;
+    border-radius: 4px; }
     .c-form__show:hover {
       background: #c5bfbf; }
   .c-form__labeling {
     margin-left: 30px; }
+  .c-form__checked-box {
+    background: #2AA1C0;
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .c-form__contact-wrapper {
+    width: 40%;
+    display: inline-block;
+    margin: 25px; }
+  .c-form__contact {
+    display: block;
+    margin: 15px 0; }
+  .c-form__info {
+    border: none;
+    border-bottom: 1.5px solid #b3aaaa;
+    border-radius: 2px;
+    width: 80%;
+    padding: 5px;
+    font-size: 18px;
+    outline: none; }
