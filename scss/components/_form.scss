@@ -8,17 +8,16 @@
     }
 
     &__title {
-        margin: 30px;
+        margin: 20px;
         font-size: 34px;
-        @include mq (704px,1367px){
+        @include mq (570px,1366px){
             font-size: 25px;
-            margin: 20px;
         }
     }
 
     &__accordion {
         display: block;
-        padding-left: 30px;
+        padding-left: 20px;
         width: 100%;
     }
 
@@ -26,8 +25,8 @@
         font-size: 18px;
         font-weight: 700; 
         border-radius: 5px 5px 0 0;
-        @include mq (0, 1326px){
-           height: 50%;
+        @include mq (569px, 1366px){
+           font-size: 14px;
         }
     }
 
@@ -38,26 +37,29 @@
         width: 100%;
         background: rgb(204, 199, 199);
         border-radius: 5px 5px 0 0;
-        border-bottom:1px groove rgb(129, 124, 124);
+        border-bottom:1px groove rgb(177, 171, 171);
         
     }
 
     &__item-title {
         padding: 25px;
-        @include mq (0, 1326px){
+        @include mq (569px, 1366px){
             padding: 15px;
         }
     }
 
     &__hidden {
-        display: none;
+        display: block;
         background: white;
         border-radius: 0 0 5px 5px;
         color: darkslategrey;
         padding:10px;
         &.show-box {
-            display: block;
+            display: none;
             
+        }
+        @include mq (569px,1366px){
+            font-size: 12px;
         }
        
     }
@@ -66,16 +68,19 @@
     &__checklist {
         width: 80%;
         padding: 15px 25px;
+        @include mq (569px,1366px){
+            padding: 10px 20px;
+        }
     }
 
     &__item {
         position: relative;
         margin-bottom: 20px;
         padding: 8px;
-        @include mq (704px,1326px){
+        @include mq (569px,1366px){
             font-size: 15px;
             padding: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         
     }
@@ -104,7 +109,7 @@
 
     &__labeling {
         margin-left: 30px;
-        @include mq (768px,1326px){
+        @include mq (569px,1366px){
             font-size: 15px;
             padding: 10px;
         }
@@ -125,12 +130,15 @@
         width: 40%;
         display: inline-block;
         margin: 20px;
+        @include mq (569px,1366px){
+            margin: 5px;
+        }
     }
 
     &__contact {
         display: block;
         margin: 15px 0;
-        @include mq (768px,1326px){
+        @include mq (569px,1366px){
             font-size: 15px;
         }
         
@@ -144,7 +152,7 @@
         padding: 5px;
         font-size: 18px;
         outline: none;
-        @include mq (768px,1326px){
+        @include mq (569px,1366px){
             font-size: 15px;
             width: 70%;
         }
@@ -173,6 +181,10 @@
             color: white;
             background: #008cdc;
             transition: 0.8s;
+        }
+        @include mq (569px,1366px){
+            font-size: 12px;
+            padding: 10px 50px;
         }
         
     }

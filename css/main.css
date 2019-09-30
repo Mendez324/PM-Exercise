@@ -135,23 +135,22 @@ body {
   .c-form__wrapper {
     margin: 35px 60px 20px 40px; }
   .c-form__title {
-    margin: 30px;
+    margin: 20px;
     font-size: 34px; }
-    @media (min-width: 704px) and (max-width: 1367px) {
+    @media (min-width: 570px) and (max-width: 1366px) {
       .c-form__title {
-        font-size: 25px;
-        margin: 20px; } }
+        font-size: 25px; } }
   .c-form__accordion {
     display: block;
-    padding-left: 30px;
+    padding-left: 20px;
     width: 100%; }
   .c-form__acc-item {
     font-size: 18px;
     font-weight: 700;
     border-radius: 5px 5px 0 0; }
-    @media (min-width: 0) and (max-width: 1326px) {
+    @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__acc-item {
-        height: 50%; } }
+        font-size: 14px; } }
   .c-form__content {
     cursor: pointer;
     display: -webkit-box;
@@ -163,32 +162,38 @@ body {
     width: 100%;
     background: #ccc7c7;
     border-radius: 5px 5px 0 0;
-    border-bottom: 1px groove #817c7c; }
+    border-bottom: 1px groove #b1abab; }
   .c-form__item-title {
     padding: 25px; }
-    @media (min-width: 0) and (max-width: 1326px) {
+    @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__item-title {
         padding: 15px; } }
   .c-form__hidden {
-    display: none;
+    display: block;
     background: white;
     border-radius: 0 0 5px 5px;
     color: darkslategrey;
     padding: 10px; }
     .c-form__hidden.show-box {
-      display: block; }
+      display: none; }
+    @media (min-width: 569px) and (max-width: 1366px) {
+      .c-form__hidden {
+        font-size: 12px; } }
   .c-form__checklist {
     width: 80%;
     padding: 15px 25px; }
+    @media (min-width: 569px) and (max-width: 1366px) {
+      .c-form__checklist {
+        padding: 10px 20px; } }
   .c-form__item {
     position: relative;
     margin-bottom: 20px;
     padding: 8px; }
-    @media (min-width: 704px) and (max-width: 1326px) {
+    @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__item {
         font-size: 15px;
         padding: 10px;
-        margin-bottom: 10px; } }
+        margin-bottom: 5px; } }
   .c-form__squareform {
     position: absolute;
     opacity: 0;
@@ -207,7 +212,7 @@ body {
       background: #c5bfbf; }
   .c-form__labeling {
     margin-left: 30px; }
-    @media (min-width: 768px) and (max-width: 1326px) {
+    @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__labeling {
         font-size: 15px;
         padding: 10px; } }
@@ -226,10 +231,13 @@ body {
     width: 40%;
     display: inline-block;
     margin: 20px; }
+    @media (min-width: 569px) and (max-width: 1366px) {
+      .c-form__contact-wrapper {
+        margin: 5px; } }
   .c-form__contact {
     display: block;
     margin: 15px 0; }
-    @media (min-width: 768px) and (max-width: 1326px) {
+    @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__contact {
         font-size: 15px; } }
   .c-form__info {
@@ -240,7 +248,7 @@ body {
     padding: 5px;
     font-size: 18px;
     outline: none; }
-    @media (min-width: 768px) and (max-width: 1326px) {
+    @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__info {
         font-size: 15px;
         width: 70%; } }
@@ -269,3 +277,7 @@ body {
       -webkit-transition: 0.8s;
       -o-transition: 0.8s;
       transition: 0.8s; }
+    @media (min-width: 569px) and (max-width: 1366px) {
+      .c-form__btn {
+        font-size: 12px;
+        padding: 10px 50px; } }
