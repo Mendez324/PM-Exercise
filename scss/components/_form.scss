@@ -1,26 +1,25 @@
 .c-form {
     //width: 90%;
-    flex:1;
-    background: rgb(231, 221, 221);
+    flex: 1;
+    background: rgb(241, 235, 235);
 
     &__wrapper {
         margin: 35px 60px 20px 40px;
-        width: 90%;
-        max-height: 20%;
-       
     }
 
     &__title {
         margin: 30px;
         font-size: 34px;
+        @include mq (768px,1366px){
+            font-size: 25px;
+            margin: 20px;
+        }
     }
 
     &__accordion {
         display: block;
         padding-left: 30px;
         width: 100%;
-        
-        
     }
 
     &__acc-item {
@@ -37,13 +36,17 @@
         display: flex;
         align-items: center;
         width: 100%;
-        background: rgb(243, 239, 239);
+        background: rgb(204, 199, 199);
         border-radius: 5px 5px 0 0;
         border-bottom:1px groove rgb(129, 124, 124);
+        
     }
 
     &__item-title {
         padding: 25px;
+        @include mq (0, 1366px){
+            padding: 15px;
+        }
     }
 
     &__hidden {
@@ -69,6 +72,11 @@
         position: relative;
         margin-bottom: 20px;
         padding: 8px;
+        @include mq (768px,1366px){
+            font-size: 15px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
         
     }
 
@@ -87,7 +95,7 @@
         height: 27px;
         width: 27px;
         border: 0.5px solid grey;
-        border-radius: 4px;
+        border-radius: 3px;
         &:hover {
             background: rgb(197, 191, 191);
         }
@@ -96,6 +104,10 @@
 
     &__labeling {
         margin-left: 30px;
+        @include mq (768px,1366px){
+            font-size: 15px;
+            padding: 10px;
+        }
     }
 
     &__checked-box {
@@ -118,6 +130,9 @@
     &__contact {
         display: block;
         margin: 15px 0;
+        @include mq (768px,1366px){
+            font-size: 15px;
+        }
         
     }
 
@@ -129,6 +144,37 @@
         padding: 5px;
         font-size: 18px;
         outline: none;
+        @include mq (768px,1366px){
+            font-size: 15px;
+            width: 70%;
+        }
+        
+    }
+
+    &__btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        
+    }
+
+    &__btn {
+        padding: 20px 80px;
+        margin-left: 15px;
+        border-radius: 25px;
+        font-size: 18px;
+        border: 0.5 solid lightgray;
+        color: black;
+        background: white;
+        text-decoration: none;
+        &:hover {
+            text-transform: uppercase;
+            color: white;
+            background: #008cdc;
+            transition: 0.8s;
+        }
+        
     }
 
 

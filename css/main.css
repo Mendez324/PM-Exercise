@@ -61,11 +61,10 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .container {
-  width: 100%;
-  height: calc(100% - 60px);
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: calc(100vh - 60px); }
 
 .c-header {
   width: 100%;
@@ -77,7 +76,8 @@ body {
   align-items: center;
   height: 60px; }
   .c-header__logo-container {
-    margin: 0 left; }
+    margin: 0 left;
+    padding-left: 5px; }
   .c-header__logo {
     width: 100%; }
 
@@ -88,7 +88,7 @@ body {
   max-width: 275px;
   -ms-flex-preferred-size: 275px;
   flex-basis: 275px;
-  background: #1c1c4b;
+  background: #008cdc;
   font-size: 20px;
   color: white;
   padding-top: 20px;
@@ -128,14 +128,16 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: #e7dddd; }
+  background: #f1ebeb; }
   .c-form__wrapper {
-    margin: 35px 60px 20px 40px;
-    width: 90%;
-    max-height: 20%; }
+    margin: 35px 60px 20px 40px; }
   .c-form__title {
     margin: 30px;
     font-size: 34px; }
+    @media (min-width: 768px) and (max-width: 1366px) {
+      .c-form__title {
+        font-size: 25px;
+        margin: 20px; } }
   .c-form__accordion {
     display: block;
     padding-left: 30px;
@@ -156,11 +158,14 @@ body {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
-    background: #f3efef;
+    background: #ccc7c7;
     border-radius: 5px 5px 0 0;
     border-bottom: 1px groove #817c7c; }
   .c-form__item-title {
     padding: 25px; }
+    @media (min-width: 0) and (max-width: 1366px) {
+      .c-form__item-title {
+        padding: 15px; } }
   .c-form__hidden {
     display: none;
     background: white;
@@ -176,6 +181,11 @@ body {
     position: relative;
     margin-bottom: 20px;
     padding: 8px; }
+    @media (min-width: 768px) and (max-width: 1366px) {
+      .c-form__item {
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 10px; } }
   .c-form__squareform {
     position: absolute;
     opacity: 0;
@@ -189,11 +199,15 @@ body {
     height: 27px;
     width: 27px;
     border: 0.5px solid grey;
-    border-radius: 4px; }
+    border-radius: 3px; }
     .c-form__show:hover {
       background: #c5bfbf; }
   .c-form__labeling {
     margin-left: 30px; }
+    @media (min-width: 768px) and (max-width: 1366px) {
+      .c-form__labeling {
+        font-size: 15px;
+        padding: 10px; } }
   .c-form__checked-box {
     background: #2AA1C0;
     left: 8px;
@@ -212,6 +226,9 @@ body {
   .c-form__contact {
     display: block;
     margin: 15px 0; }
+    @media (min-width: 768px) and (max-width: 1366px) {
+      .c-form__contact {
+        font-size: 15px; } }
   .c-form__info {
     border: none;
     border-bottom: 1.5px solid #b3aaaa;
@@ -220,3 +237,32 @@ body {
     padding: 5px;
     font-size: 18px;
     outline: none; }
+    @media (min-width: 768px) and (max-width: 1366px) {
+      .c-form__info {
+        font-size: 15px;
+        width: 70%; } }
+  .c-form__btn-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 20px; }
+  .c-form__btn {
+    padding: 20px 80px;
+    margin-left: 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    border: 0.5 solid lightgray;
+    color: black;
+    background: white;
+    text-decoration: none; }
+    .c-form__btn:hover {
+      text-transform: uppercase;
+      color: white;
+      background: #008cdc;
+      -webkit-transition: 0.8s;
+      -o-transition: 0.8s;
+      transition: 0.8s; }
