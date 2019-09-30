@@ -7,6 +7,9 @@
     color: white;
     padding-top: 20px;
     flex-direction: column;
+    @include mq (0, 1366px){
+        font-size: 15px;
+    }
 
     &__list {
         height: auto

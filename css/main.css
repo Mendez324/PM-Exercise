@@ -96,6 +96,9 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media (min-width: 0) and (max-width: 1366px) {
+    .c-menu {
+      font-size: 15px; } }
   .c-menu__list {
     height: auto; }
   .c-menu__list-item {
@@ -134,7 +137,7 @@ body {
   .c-form__title {
     margin: 30px;
     font-size: 34px; }
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: 704px) and (max-width: 1367px) {
       .c-form__title {
         font-size: 25px;
         margin: 20px; } }
@@ -146,7 +149,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     border-radius: 5px 5px 0 0; }
-    @media (min-width: 0) and (max-width: 1366px) {
+    @media (min-width: 0) and (max-width: 1326px) {
       .c-form__acc-item {
         height: 50%; } }
   .c-form__content {
@@ -163,7 +166,7 @@ body {
     border-bottom: 1px groove #817c7c; }
   .c-form__item-title {
     padding: 25px; }
-    @media (min-width: 0) and (max-width: 1366px) {
+    @media (min-width: 0) and (max-width: 1326px) {
       .c-form__item-title {
         padding: 15px; } }
   .c-form__hidden {
@@ -181,7 +184,7 @@ body {
     position: relative;
     margin-bottom: 20px;
     padding: 8px; }
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: 704px) and (max-width: 1326px) {
       .c-form__item {
         font-size: 15px;
         padding: 10px;
@@ -204,7 +207,7 @@ body {
       background: #c5bfbf; }
   .c-form__labeling {
     margin-left: 30px; }
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: 768px) and (max-width: 1326px) {
       .c-form__labeling {
         font-size: 15px;
         padding: 10px; } }
@@ -226,7 +229,7 @@ body {
   .c-form__contact {
     display: block;
     margin: 15px 0; }
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: 768px) and (max-width: 1326px) {
       .c-form__contact {
         font-size: 15px; } }
   .c-form__info {
@@ -237,7 +240,7 @@ body {
     padding: 5px;
     font-size: 18px;
     outline: none; }
-    @media (min-width: 768px) and (max-width: 1366px) {
+    @media (min-width: 768px) and (max-width: 1326px) {
       .c-form__info {
         font-size: 15px;
         width: 70%; } }

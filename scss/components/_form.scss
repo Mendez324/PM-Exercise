@@ -10,7 +10,7 @@
     &__title {
         margin: 30px;
         font-size: 34px;
-        @include mq (768px,1366px){
+        @include mq (704px,1367px){
             font-size: 25px;
             margin: 20px;
         }
@@ -26,7 +26,7 @@
         font-size: 18px;
         font-weight: 700; 
         border-radius: 5px 5px 0 0;
-        @include mq (0, 1366px){
+        @include mq (0, 1326px){
            height: 50%;
         }
     }
@@ -44,7 +44,7 @@
 
     &__item-title {
         padding: 25px;
-        @include mq (0, 1366px){
+        @include mq (0, 1326px){
             padding: 15px;
         }
     }
@@ -72,7 +72,7 @@
         position: relative;
         margin-bottom: 20px;
         padding: 8px;
-        @include mq (768px,1366px){
+        @include mq (704px,1326px){
             font-size: 15px;
             padding: 10px;
             margin-bottom: 10px;
@@ -104,7 +104,7 @@
 
     &__labeling {
         margin-left: 30px;
-        @include mq (768px,1366px){
+        @include mq (768px,1326px){
             font-size: 15px;
             padding: 10px;
         }
@@ -130,7 +130,7 @@
     &__contact {
         display: block;
         margin: 15px 0;
-        @include mq (768px,1366px){
+        @include mq (768px,1326px){
             font-size: 15px;
         }
         
@@ -144,7 +144,7 @@
         padding: 5px;
         font-size: 18px;
         outline: none;
-        @include mq (768px,1366px){
+        @include mq (768px,1326px){
             font-size: 15px;
             width: 70%;
         }
