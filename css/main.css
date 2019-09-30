@@ -57,6 +57,9 @@ html, body {
   position: relative;
   height: 100%; }
 
+body {
+  font-family: "Open Sans", sans-serif; }
+
 .container {
   width: 100%;
   height: calc(100% - 60px);
@@ -86,7 +89,6 @@ html, body {
   -ms-flex-preferred-size: 275px;
   flex-basis: 275px;
   background: #1c1c4b;
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   color: white;
   padding-top: 20px;
@@ -126,25 +128,20 @@ html, body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: #e7dddd;
-  font-family: "Open Sans", sans-serif; }
+  background: #e7dddd; }
   .c-form__wrapper {
     margin: 35px 60px 20px 40px;
-    height: 80%;
     width: 90%;
-    max-height: 90%; }
+    max-height: 20%; }
   .c-form__title {
     margin: 30px;
-    font-family: "Open Sans", sans-serif;
     font-size: 34px; }
   .c-form__accordion {
     display: block;
     padding-left: 30px;
     width: 100%; }
   .c-form__acc-item {
-    display: block;
     font-size: 18px;
-    width: 100%;
     font-weight: 700;
     border-radius: 5px 5px 0 0; }
     @media (min-width: 0) and (max-width: 1366px) {
@@ -168,7 +165,6 @@ html, body {
     display: none;
     background: white;
     border-radius: 0 0 5px 5px;
-    font-family: "Open Sans", sans-serif;
     color: darkslategrey;
     padding: 10px; }
     .c-form__hidden.show-box {
@@ -212,7 +208,7 @@ html, body {
   .c-form__contact-wrapper {
     width: 40%;
     display: inline-block;
-    margin: 25px; }
+    margin: 20px; }
   .c-form__contact {
     display: block;
     margin: 15px 0; }

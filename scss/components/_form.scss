@@ -2,19 +2,16 @@
     //width: 90%;
     flex:1;
     background: rgb(231, 221, 221);
-    font-family: $primary-font;
 
     &__wrapper {
         margin: 35px 60px 20px 40px;
-        height: 80%;
         width: 90%;
-        max-height: 90%;
+        max-height: 20%;
        
     }
 
     &__title {
         margin: 30px;
-        font-family: $primary-font;
         font-size: 34px;
     }
 
@@ -27,9 +24,7 @@
     }
 
     &__acc-item {
-        display: block;
         font-size: 18px;
-        width: 100%;
         font-weight: 700; 
         border-radius: 5px 5px 0 0;
         @include mq (0, 1366px){
@@ -55,7 +50,6 @@
         display: none;
         background: white;
         border-radius: 0 0 5px 5px;
-        font-family: $primary-font;
         color: darkslategrey;
         padding:10px;
         &.show-box {
@@ -118,7 +112,7 @@
     &__contact-wrapper {
         width: 40%;
         display: inline-block;
-        margin:25px;
+        margin: 20px;
     }
 
     &__contact {
