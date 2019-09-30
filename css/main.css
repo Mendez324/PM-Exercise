@@ -159,6 +159,9 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 100%;
     background: #ccc7c7;
     border-radius: 5px 5px 0 0;
@@ -168,6 +171,11 @@ body {
     @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__item-title {
         padding: 15px; } }
+  .c-form__minus {
+    width: 24px;
+    height: 4px;
+    background: black;
+    margin-right: 25px; }
   .c-form__hidden {
     display: block;
     background: white;
@@ -236,7 +244,8 @@ body {
         margin: 5px; } }
   .c-form__contact {
     display: block;
-    margin: 15px 0; }
+    margin: 15px 0;
+    opacity: 0.8; }
     @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__contact {
         font-size: 15px; } }
@@ -269,7 +278,8 @@ body {
     border: 0.5 solid lightgray;
     color: black;
     background: white;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: 700; }
     .c-form__btn:hover {
       text-transform: uppercase;
       color: white;

@@ -14,24 +14,6 @@ $( document ).ready(function() {
   });
 
 
-
-  $(".c-form__btn").click (
-    
-    $('.c-form').validate({ 
-      rules: {
-          email: {
-              required: true,
-              email: true
-          },
-            password: {
-              required: true
-          },
-            phone: {
-              required: true
-          }
-        }
-    })
-  );
   
 });
 
