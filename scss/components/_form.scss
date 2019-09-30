@@ -1,5 +1,6 @@
 .c-form {
-    width: 90%;
+    //width: 90%;
+    flex:1;
     background: rgb(231, 221, 221);
     font-family: $primary-font;
 
@@ -7,6 +8,8 @@
         margin: 35px 60px 20px 40px;
         height: 80%;
         width: 90%;
+        max-height: 90%;
+       
     }
 
     &__title {
@@ -19,7 +22,7 @@
         display: block;
         padding-left: 30px;
         width: 100%;
-        height: 50%;
+        
         
     }
 
@@ -29,7 +32,9 @@
         width: 100%;
         font-weight: 700; 
         border-radius: 5px 5px 0 0;
-        //height: 69px;
+        @include mq (0, 1366px){
+           height: 50%;
+        }
     }
 
     &__content {
@@ -48,13 +53,14 @@
 
     &__hidden {
         display: none;
+        background: white;
+        border-radius: 0 0 5px 5px;
+        font-family: $primary-font;
+        color: darkslategrey;
+        padding:10px;
         &.show-box {
             display: block;
-            background: white;
-            border-radius: 0 0 5px 5px;
-            font-family: $primary-font;
-            color: darkslategrey;
-            padding:10px;
+            
         }
        
     }

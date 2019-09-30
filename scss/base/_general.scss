@@ -1,5 +1,11 @@
 $primary-font: 'Open Sans', sans-serif;
 
+@mixin mq($smallerValue,$biggerValue) {
+    @media (min-width: #{$smallerValue}) and (max-width: $biggerValue) {
+      @content;
+    }
+  }    
+
 .container {
     width: 100%;
     height: calc(100% - 60px);
