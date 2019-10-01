@@ -77,15 +77,14 @@
 
     &__checklist {
         width: 80%;
-        padding: 15px 25px;
+        padding-bottom: 15px;
         @include mq (569px,1366px){
-            padding: 10px 20px;
+            padding-bottom: 10px;
         }
     }
 
     &__item {
         position: relative;
-        margin-bottom: 20px;
         padding: 8px;
         @include mq (569px,1366px){
             font-size: 15px;
@@ -95,47 +94,31 @@
         
     }
 
-    &__squareform {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
-
-    &__show {
-        position: absolute;
-        top: 4px;
-        left: 5px;
-        height: 27px;
-        width: 27px;
-        border: 0.5px solid grey;
-        border-radius: 3px;
-        &:hover {
-            background: rgb(197, 191, 191);
-        }
-        
-    }
-
     &__labeling {
-        margin-left: 30px;
+        margin-left: 20px;
+        cursor: pointer;
         @include mq (569px,1366px){
             font-size: 15px;
             padding: 10px;
         }
     }
-
-    &__checked-box {
-        background: #2AA1C0;
-        left: 8px;
-        top: 4px;
-        width: 3px;
-        height: 8px;
-        border: solid white;
-        border-width: 0 2px 2px 0;
-        transform: rotate(45deg);
+    &__input-test[type="checkbox"] {
+        display: none;
+        z-index: -9999;
     }
 
+
+    &__label-text:before {
+        content: "\f096";
+        margin-right: 10px;
+        font-family: "FontAwesome";
+        font-weight: normal;        
+        font-size: 30px;
+        padding:10px 0 0 0;
+        &:checked {
+            content: "\f14a";
+        }
+    }
     &__contact-wrapper {
         width: 40%;
         display: inline-block;
@@ -189,7 +172,6 @@
         text-decoration: none;
         font-weight: 700;
         &:hover {
-            text-transform: uppercase;
             color: white;
             background: #008cdc;
             transition: 0.8s;
@@ -198,8 +180,14 @@
             font-size: 12px;
             padding: 10px 50px;
         }
+
+        
         
     }
+
+    
+
+    
 
 
 

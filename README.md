@@ -1,3 +1,13 @@
 # PM-Exercise
 
 This is an exercise for an interview
+
+## How to run the project
+
+- To load this project you should have Node installed on your computer.
+- Go to the root of the project and run cmd "npm install" before opening any html.
+- i tryed to learn a bit of webpack because i was converting scss to css with Prepros program and it was time to stop and learn a task runner.
+- Project is working on 1920x1080 and 1366x768 resolutions.
+
+- Sass files are writing diferently because i'm using BEM way of writing
+
