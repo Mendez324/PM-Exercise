@@ -74,7 +74,6 @@
        
     }
 
-
     &__checklist {
         width: 80%;
         padding-bottom: 15px;
@@ -88,14 +87,11 @@
         padding: 8px;
         @include mq (569px,1366px){
             font-size: 15px;
-            padding: 10px;
-            margin-bottom: 5px;
         }
         
     }
 
     &__labeling {
-        margin-left: 20px;
         cursor: pointer;
         @include mq (569px,1366px){
             font-size: 15px;
@@ -104,21 +100,26 @@
     }
     &__input-test[type="checkbox"] {
         display: none;
-        z-index: -9999;
     }
 
 
-    &__label-text:before {
+    &__input-test[type="checkbox"] + &__label-text:before {
         content: "\f096";
         margin-right: 10px;
         font-family: "FontAwesome";
-        font-weight: normal;        
-        font-size: 30px;
-        padding:10px 0 0 0;
-        &:checked {
-            content: "\f14a";
-        }
+        font-weight: normal; 
+        text-transform: none;
+        font-size: 28px;
+        vertical-align: -20%;
+        
     }
+    &__input-test[type="checkbox"]:checked + &__label-text:before {
+        content: "\f14a";
+        color: #008cdc;
+        transition: 1s ease-in-out;
+    }
+
+
     &__contact-wrapper {
         width: 40%;
         display: inline-block;

@@ -23,7 +23,6 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* HTML5 display-role reset for older browsers */
@@ -50,7 +49,6 @@ table {
   border-spacing: 0; }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -61,18 +59,12 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: calc(100vh - 60px); }
 
 .c-header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 60px; }
   .c-header__logo-container {
@@ -82,19 +74,13 @@ body {
     width: 100%; }
 
 .c-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   max-width: 275px;
-  -ms-flex-preferred-size: 275px;
   flex-basis: 275px;
   background: #008cdc;
   font-size: 20px;
   color: white;
   padding-top: 20px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column; }
   @media (min-width: 0) and (max-width: 1366px) {
     .c-menu {
@@ -114,22 +100,14 @@ body {
   background: #5c5c66;
   border-top: 0.5px solid #f8eaea;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 14px;
   padding: 5px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   margin-top: auto; }
 
 .c-form {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   background: #f1ebeb; }
   .c-form__wrapper {
@@ -153,14 +131,8 @@ body {
         font-size: 14px; } }
   .c-form__content {
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
     background: #ccc7c7;
@@ -198,28 +170,27 @@ body {
     padding: 8px; }
     @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__item {
-        font-size: 15px;
-        padding: 10px;
-        margin-bottom: 5px; } }
+        font-size: 15px; } }
   .c-form__labeling {
-    margin-left: 20px;
     cursor: pointer; }
     @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__labeling {
         font-size: 15px;
         padding: 10px; } }
   .c-form__input-test[type="checkbox"] {
-    display: none;
-    z-index: -9999; }
-  .c-form__label-text:before {
+    display: none; }
+  .c-form__input-test[type="checkbox"] + .c-form__label-text:before {
     content: "\f096";
     margin-right: 10px;
     font-family: "FontAwesome";
     font-weight: normal;
-    font-size: 30px;
-    padding: 10px 0 0 0; }
-    .c-form__label-text:before:checked {
-      content: "\f14a"; }
+    text-transform: none;
+    font-size: 28px;
+    vertical-align: -20%; }
+  .c-form__input-test[type="checkbox"]:checked + .c-form__label-text:before {
+    content: "\f14a";
+    color: #008cdc;
+    transition: 1s ease-in-out; }
   .c-form__contact-wrapper {
     width: 40%;
     display: inline-block;
@@ -248,11 +219,7 @@ body {
         width: 70%; } }
   .c-form__btn-container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     margin-top: 20px; }
   .c-form__btn {
@@ -268,10 +235,9 @@ body {
     .c-form__btn:hover {
       color: white;
       background: #008cdc;
-      -webkit-transition: 0.8s;
-      -o-transition: 0.8s;
       transition: 0.8s; }
     @media (min-width: 569px) and (max-width: 1366px) {
       .c-form__btn {
         font-size: 12px;
         padding: 10px 50px; } }
+

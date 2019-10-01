@@ -11,3 +11,5 @@ This is an exercise for an interview
 
 - Sass files are writing diferently because i'm using BEM way of writing
 
+-Checkboxes took a while to do because i never made custom ones
+
